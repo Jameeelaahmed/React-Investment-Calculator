@@ -7,10 +7,10 @@ import Result from "./Components/Result/Result";
 import { useState } from 'react';
 function App() {
   // ! START two way binding state
-  const [initialInvestment,setInitialInvestment]=useState(10000);
-  const [annualInvestment,setAnnualInvestment]=useState(1200);
-  const [expectedReturn,setExpectedReturn]=useState(6);
-  const [duration,seteDuration]=useState(10);
+  const [initialInvestment,setInitialInvestment]=useState("");
+  const [annualInvestment,setAnnualInvestment]=useState("");
+  const [expectedReturn,setExpectedReturn]=useState("");
+  const [duration,seteDuration]=useState("");
 
   function handleInitialInvestment(event){
     setInitialInvestment(+event.target.value);
